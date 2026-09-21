@@ -1,0 +1,325 @@
+Found 5 NetCDF file(s) for inspection:
+ - data\raw\glorys\cmems_mod_glo_phy_my_0.083deg_P1D-m_1789972032902.nc
+ - data\raw\ssh\c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D_1789968064145.nc
+ - data\raw\sss\cmems_obs-mob_glo_phy-sss_my_multi_P1D_1789967702527.nc
+ - data\raw\sst\METOFFICE-GLO-SST-L4-REP-OBS-SST_1789967060625.nc
+ - data\raw\wind\cmems_obs-wind_glo_phy_nrt_l3-metopb-ascat-asc-0.25deg_P1D-i_1789971535977 (1).nc
+
+================================================================================
+================================================================================
+FILE: data\raw\glorys\cmems_mod_glo_phy_my_0.083deg_P1D-m_1789972032902.nc
+================================================================================
+
+--- DATASET OVERVIEW ---
+<xarray.Dataset> Size: 27MB
+Dimensions:    (time: 31, depth: 1, latitude: 301, longitude: 720)
+Coordinates:
+  * time       (time) datetime64[ns] 248B 2020-01-01 2020-01-02 ... 2020-01-31
+  * depth      (depth) float32 4B 0.494
+  * latitude   (latitude) float32 1kB 5.0 5.083 5.167 5.25 ... 29.83 29.92 30.0
+  * longitude  (longitude) float32 3kB 45.0 45.08 45.17 ... 104.8 104.8 104.9
+Data variables:
+    thetao     (time, depth, latitude, longitude) float32 27MB ...
+Attributes:
+    Conventions:       CF-1.11
+    title:             daily mean fields from Global Ocean Physics Analysis a...
+    institution:       MERCATOR OCEAN
+    source:            MERCATOR GLORYS12V1
+    history:           2023/06/01 16:20:05 MERCATOR OCEAN Netcdf creation
+    references:        http://www.mercator-ocean.fr
+    comment:           CMEMS product
+    subset:source:     ARCO data downloaded from the Marine Data Store using ...
+    subset:productId:  GLOBAL_MULTIYEAR_PHY_001_030
+    subset:datasetId:  cmems_mod_glo_phy_my_0.083deg_P1D-m_202311
+    subset:date:       2026-09-21T06:27:12.903Z
+
+--- DIMENSIONS ---
+  time: 31
+  depth: 1
+  latitude: 301
+  longitude: 720
+
+--- COORDINATES ---
+  Coord: 'time' | Shape: (31,) | Range: [2020-01-01T00:00:00.000000000 to 2020-01-31T00:00:00.000000000] | Resolution: N/A
+  Coord: 'depth' | Shape: (1,) | Range: [0.49402499198913574 to 0.49402499198913574] | Resolution: N/A
+  Coord: 'latitude' | Shape: (301,) | Range: [5.0 to 30.0] | Resolution: 0.0833 (approx)
+  Coord: 'longitude' | Shape: (720,) | Range: [45.0000114440918 to 104.91667938232422] | Resolution: 0.0833 (approx)
+
+--- DATA VARIABLES ---
+  Variable: 'thetao'
+    - Dimensions: ('time', 'depth', 'latitude', 'longitude')
+    - Shape: (31, 1, 301, 720)
+    - Dtype: float32
+    - Standard Name: sea_water_potential_temperature
+    - Long Name: Temperature
+    - Units: degrees_C
+    - Fill Value: N/A
+
+================================================================================
+
+================================================================================
+FILE: data\raw\ssh\c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D_1789968064145.nc
+================================================================================
+
+--- DATASET OVERVIEW ---
+<xarray.Dataset> Size: 3MB
+Dimensions:    (time: 31, latitude: 100, longitude: 240)
+Coordinates:
+  * time       (time) datetime64[ns] 248B 2020-01-01 2020-01-02 ... 2020-01-31
+  * latitude   (latitude) float32 400B 5.125 5.375 5.625 ... 29.38 29.62 29.88
+  * longitude  (longitude) float32 960B 45.12 45.38 45.62 ... 104.4 104.6 104.9
+Data variables:
+    sla        (time, latitude, longitude) float32 3MB ...
+Attributes:
+    Conventions:       CF-1.11
+    title:             DT merged two satellites Global Ocean Gridded SSALTO/D...
+    institution:       CLS, CNES
+    source:            Altimetry measurements
+    history:           2024/09/23 20:26:01 pva_axp@trex014.sis.cnes.fr Import...
+    contact:           http://climate.copernicus.eu/c3s-user-service-desk
+    references:        http://climate.copernicus.eu
+    comment:           Sea Surface Height measured by Altimetry and derived v...
+    subset:source:     ARCO data downloaded from the Marine Data Store using ...
+    subset:productId:  SEALEVEL_GLO_PHY_CLIMATE_L4_MY_008_057
+    subset:datasetId:  c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D_...
+    subset:date:       2026-09-21T05:21:04.145Z
+
+--- DIMENSIONS ---
+  time: 31
+  latitude: 100
+  longitude: 240
+
+--- COORDINATES ---
+  Coord: 'time' | Shape: (31,) | Range: [2020-01-01T00:00:00.000000000 to 2020-01-31T00:00:00.000000000] | Resolution: N/A
+  Coord: 'latitude' | Shape: (100,) | Range: [5.125 to 29.875] | Resolution: 0.2500 (approx)
+  Coord: 'longitude' | Shape: (240,) | Range: [45.125 to 104.875] | Resolution: 0.2500 (approx)
+
+--- DATA VARIABLES ---
+  Variable: 'sla'
+    - Dimensions: ('time', 'latitude', 'longitude')
+    - Shape: (31, 100, 240)
+    - Dtype: float32
+    - Standard Name: sea_surface_height_above_sea_level
+    - Long Name: Sea level anomaly
+    - Units: m
+    - Fill Value: N/A
+
+================================================================================
+
+================================================================================
+FILE: data\raw\sss\cmems_obs-mob_glo_phy-sss_my_multi_P1D_1789967702527.nc
+================================================================================
+
+--- DATASET OVERVIEW ---
+<xarray.Dataset> Size: 60MB
+Dimensions:           (time: 31, depth: 1, latitude: 200, longitude: 480)
+Coordinates:
+  * time              (time) datetime64[ns] 248B 2020-01-01 ... 2020-01-31
+  * depth             (depth) float32 4B -0.0
+  * latitude          (latitude) float32 800B 5.062 5.188 5.312 ... 29.81 29.94
+  * longitude         (longitude) float32 2kB 45.06 45.19 45.31 ... 104.8 104.9
+Data variables:
+    dos               (time, depth, latitude, longitude) float32 12MB ...
+    dos_error         (time, depth, latitude, longitude) float32 12MB ...
+    sea_ice_fraction  (time, depth, latitude, longitude) float32 12MB ...
+    sos               (time, depth, latitude, longitude) float32 12MB ...
+    sos_error         (time, depth, latitude, longitude) float32 12MB ...
+Attributes:
+    Conventions:       CF-1.11
+    title:             Global Analysed Sea Surface Salinity and Density
+    institution:       CNR
+    contact:           servicedesk.cmems@mercator-ocean.eu
+    references:        Buongiorno Nardelli, B., R. Droghei, and R. Santoleri ...
+    subset:source:     ARCO data downloaded from the Marine Data Store using ...
+    subset:productId:  MULTIOBS_GLO_PHY_S_SURFACE_MYNRT_015_013
+    subset:datasetId:  cmems_obs-mob_glo_phy-sss_my_multi_P1D_202311
+    subset:date:       2026-09-21T05:15:02.528Z
+
+--- DIMENSIONS ---
+  time: 31
+  depth: 1
+  latitude: 200
+  longitude: 480
+
+--- COORDINATES ---
+  Coord: 'time' | Shape: (31,) | Range: [2020-01-01T00:00:00.000000000 to 2020-01-31T00:00:00.000000000] | Resolution: N/A
+  Coord: 'depth' | Shape: (1,) | Range: [-0.0 to -0.0] | Resolution: N/A
+  Coord: 'latitude' | Shape: (200,) | Range: [5.0625 to 29.9375] | Resolution: 0.1250 (approx)
+  Coord: 'longitude' | Shape: (480,) | Range: [45.0625 to 104.9375] | Resolution: 0.1250 (approx)
+
+--- DATA VARIABLES ---
+  Variable: 'dos'
+    - Dimensions: ('time', 'depth', 'latitude', 'longitude')
+    - Shape: (31, 1, 200, 480)
+    - Dtype: float32
+    - Standard Name: sea_surface_density
+    - Long Name: Sea surface density
+    - Units: kg/m3
+    - Fill Value: N/A
+  Variable: 'dos_error'
+    - Dimensions: ('time', 'depth', 'latitude', 'longitude')
+    - Shape: (31, 1, 200, 480)
+    - Dtype: float32
+    - Standard Name: sea_surface_density_error
+    - Long Name: Sea surface density error
+    - Units: kg/m3
+    - Fill Value: N/A
+  Variable: 'sea_ice_fraction'
+    - Dimensions: ('time', 'depth', 'latitude', 'longitude')
+    - Shape: (31, 1, 200, 480)
+    - Dtype: float32
+    - Standard Name: sea_ice_area_fraction
+    - Long Name: Sea ice area fraction
+    - Units: percent
+    - Fill Value: N/A
+  Variable: 'sos'
+    - Dimensions: ('time', 'depth', 'latitude', 'longitude')
+    - Shape: (31, 1, 200, 480)
+    - Dtype: float32
+    - Standard Name: sea_surface_salinity
+    - Long Name: Sea surface salinity
+    - Units: .001
+    - Fill Value: N/A
+  Variable: 'sos_error'
+    - Dimensions: ('time', 'depth', 'latitude', 'longitude')
+    - Shape: (31, 1, 200, 480)
+    - Dtype: float32
+    - Standard Name: sea_surface_salinity_error
+    - Long Name: Sea surface salinity error
+    - Units: 0.001
+    - Fill Value: N/A
+
+================================================================================
+
+================================================================================
+FILE: data\raw\sst\METOFFICE-GLO-SST-L4-REP-OBS-SST_1789967060625.nc
+================================================================================
+
+--- DATASET OVERVIEW ---
+<xarray.Dataset> Size: 298MB
+Dimensions:           (time: 31, latitude: 500, longitude: 1200)
+Coordinates:
+  * time              (time) datetime64[ns] 248B 2020-01-01 ... 2020-01-31
+  * latitude          (latitude) float32 2kB 5.025 5.075 5.125 ... 29.92 29.98
+  * longitude         (longitude) float32 5kB 45.03 45.08 45.12 ... 104.9 105.0
+Data variables:
+    analysed_sst      (time, latitude, longitude) float32 74MB ...
+    analysis_error    (time, latitude, longitude) float32 74MB ...
+    mask              (time, latitude, longitude) float32 74MB ...
+    sea_ice_fraction  (time, latitude, longitude) float32 74MB ...
+Attributes:
+    Conventions:       CF-1.11
+    title:             Global SST & Sea Ice Analysis, L4 OSTIA, 0.05 deg dail...
+    institution:       UKMO
+    source:            AMSR2-REMSS-L2P-v2.0, AMSRE-REMSS-L2P-v2.0, GOES<13,16...
+    history:           Created from sst.nc; obs_anal.nc; seaice.nc
+    references:        Donlon, C.J., Martin, M., Stark, J.D., Roberts-Jones, ...
+    comment:           WARNING Some applications are unable to properly handl...
+    subset:source:     ARCO data downloaded from the Marine Data Store using ...
+    subset:productId:  SST_GLO_SST_L4_REP_OBSERVATIONS_010_011
+    subset:datasetId:  METOFFICE-GLO-SST-L4-REP-OBS-SST_202003
+    subset:date:       2026-09-21T05:04:20.626Z
+
+--- DIMENSIONS ---
+  time: 31
+  latitude: 500
+  longitude: 1200
+
+--- COORDINATES ---
+  Coord: 'time' | Shape: (31,) | Range: [2020-01-01T00:00:00.000000000 to 2020-01-31T00:00:00.000000000] | Resolution: N/A
+  Coord: 'latitude' | Shape: (500,) | Range: [5.025000095367432 to 29.975000381469727] | Resolution: 0.0500 (approx)
+  Coord: 'longitude' | Shape: (1200,) | Range: [45.025001525878906 to 104.97500610351562] | Resolution: 0.0500 (approx)
+
+--- DATA VARIABLES ---
+  Variable: 'analysed_sst'
+    - Dimensions: ('time', 'latitude', 'longitude')
+    - Shape: (31, 500, 1200)
+    - Dtype: float32
+    - Standard Name: sea_surface_foundation_temperature
+    - Long Name: Analysed sea surface temperature
+    - Units: kelvin
+    - Fill Value: N/A
+  Variable: 'analysis_error'
+    - Dimensions: ('time', 'latitude', 'longitude')
+    - Shape: (31, 500, 1200)
+    - Dtype: float32
+    - Standard Name: sea_surface_foundation_temperature standard_error
+    - Long Name: Estimated error standard deviation of analysed sst
+    - Units: kelvin
+    - Fill Value: N/A
+  Variable: 'mask'
+    - Dimensions: ('time', 'latitude', 'longitude')
+    - Shape: (31, 500, 1200)
+    - Dtype: float32
+    - Standard Name: N/A
+    - Long Name: Land sea ice lake bit mask
+    - Units: 
+    - Fill Value: N/A
+  Variable: 'sea_ice_fraction'
+    - Dimensions: ('time', 'latitude', 'longitude')
+    - Shape: (31, 500, 1200)
+    - Dtype: float32
+    - Standard Name: sea_ice_area_fraction
+    - Long Name: Sea ice area fraction
+    - Units: 1
+    - Fill Value: N/A
+
+================================================================================
+
+================================================================================
+FILE: data\raw\wind\cmems_obs-wind_glo_phy_nrt_l3-metopb-ascat-asc-0.25deg_P1D-i_1789971535977 (1).nc
+================================================================================
+
+--- DATASET OVERVIEW ---
+<xarray.Dataset> Size: 6MB
+Dimensions:         (time: 31, latitude: 100, longitude: 240)
+Coordinates:
+  * time            (time) datetime64[ns] 248B 2020-01-01 ... 2020-01-31
+  * latitude        (latitude) float32 400B 5.125 5.375 5.625 ... 29.62 29.88
+  * longitude       (longitude) float32 960B 45.12 45.38 45.62 ... 104.6 104.9
+Data variables:
+    eastward_wind   (time, latitude, longitude) float32 3MB ...
+    northward_wind  (time, latitude, longitude) float32 3MB ...
+Attributes:
+    Conventions:       CF-1.11
+    title:             Global Ocean - Wind - METOP-B ASCAT - 25km daily Ascen...
+    institution:       EUMETSAT/OSI SAF/KNMI
+    source:            MetOp-B ASCAT
+    history:           N/A
+    references:        ASCAT Wind Product User Manual, https://osi-saf.eumets...
+    comment:           Orbit period and inclination are constant values. All ...
+    subset:source:     ARCO data downloaded from the Marine Data Store using ...
+    subset:productId:  WIND_GLO_PHY_L3_NRT_012_002
+    subset:datasetId:  cmems_obs-wind_glo_phy_nrt_l3-metopb-ascat-asc-0.25deg...
+    subset:date:       2026-09-21T06:18:55.977Z
+
+--- DIMENSIONS ---
+  time: 31
+  latitude: 100
+  longitude: 240
+
+--- COORDINATES ---
+  Coord: 'time' | Shape: (31,) | Range: [2020-01-01T00:00:00.000000000 to 2020-01-31T00:00:00.000000000] | Resolution: N/A
+  Coord: 'latitude' | Shape: (100,) | Range: [5.125 to 29.875] | Resolution: 0.2500 (approx)
+  Coord: 'longitude' | Shape: (240,) | Range: [45.125 to 104.875] | Resolution: 0.2500 (approx)
+
+--- DATA VARIABLES ---
+  Variable: 'eastward_wind'
+    - Dimensions: ('time', 'latitude', 'longitude')
+    - Shape: (31, 100, 240)
+    - Dtype: float32
+    - Standard Name: eastward_wind
+    - Long Name: Stress equivalent wind u component at 10 m
+    - Units: m s-1
+    - Fill Value: N/A
+  Variable: 'northward_wind'
+    - Dimensions: ('time', 'latitude', 'longitude')
+    - Shape: (31, 100, 240)
+    - Dtype: float32
+    - Standard Name: northward_wind
+    - Long Name: Stress equivalent wind v component at 10 m
+    - Units: m s-1
+    - Fill Value: N/A
+
+================================================================================
+
